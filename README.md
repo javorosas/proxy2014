@@ -30,67 +30,72 @@ Gets all messages
 	    createdOn: '2001-09-12T04:08:14.846Z' 
 	  }
 	]
-	
-GET /api/message/<id>
+
+### GET `/api/message/<id>`
 Gets one message
 
-Request parameters
+#### Request parameters
 
-Url parameters
+##### Url parameters
 
-id - Id of the message
-Response
+* id - Id of the message
 
-Format: JSON
+#### Response
 
-Body: Message object
+**Format**: JSON
 
-Example
+**Body**: Message object
 
-{ 
-  id: 'dhsTfddfb98vcx4', 
-  content: 'Hello world', 
-  createdOn: '2001-09-12T04:07:58.024Z' 
-}
-POST /api/message
+#### Example
+
+	{ 
+	  id: 'dhsTfddfb98vcx4', 
+	  content: 'Hello world', 
+	  createdOn: '2001-09-12T04:07:58.024Z' 
+	}
+
+### POST /api/message
 Posts a message
 
-Request parameters
+#### Request parameters
 
-Request body
+##### Request body
 
-content - Content of the message
-Response
+**content** - Content of the message
 
-Format: JSON
+#### Response
 
-Body: Message object posted with the added parameters from server
+**Format**: JSON
 
-Example
+**Body**: Message object posted with the added parameters from server
 
-{ 
-  id: 'dhsTfddfb98vcx4', 
-  content: 'Hello world', 
-  createdOn: '2001-09-12T04:07:58.024Z' 
-}
-DELETE /api/message/<id>
+#### Example
+
+	{ 
+	  id: 'dhsTfddfb98vcx4', 
+	  content: 'Hello world', 
+	  createdOn: '2001-09-12T04:07:58.024Z' 
+	}
+
+### DELETE /api/message/<id>
 Deletes a message
 
-Request parameters
+#### Request parameters
 
-Url parameters
+##### Url parameters
 
-id - Id of the message to delete
-Response
+**id** - Id of the message to delete
 
-Format: JSON
+#### Response
 
-Body: Message object deleted
+**Format**: JSON
 
-Example
+**Body**: Message object deleted
 
-{ 
-  id: 'dhsTfddfb98vcx4', 
-  content: 'Hello world', 
-  createdOn: '2001-09-12T04:07:58.024Z' 
-}
+#### Example
+
+	{ 
+	  id: 'dhsTfddfb98vcx4', 
+	  content: 'Hello world', 
+	  createdOn: '2001-09-12T04:07:58.024Z' 
+	}
