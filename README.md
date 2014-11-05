@@ -31,6 +31,8 @@ Gets all messages
 	  }
 	]
 
+---
+
 ### GET `/api/message/<id>`
 Gets one message
 
@@ -54,6 +56,8 @@ Gets one message
 	  createdOn: '2001-09-12T04:07:58.024Z' 
 	}
 
+---
+
 ### POST /api/message
 Posts a message
 
@@ -76,6 +80,8 @@ Posts a message
 	  content: 'Hello world', 
 	  createdOn: '2001-09-12T04:07:58.024Z' 
 	}
+
+---
 
 ### DELETE /api/message/<id>
 Deletes a message
