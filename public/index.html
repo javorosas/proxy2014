@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Proxy - AngularJS</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Proxy 2014 API doc</h1>
+		<h2>Message</h2>
+		<hr>
+		<h3>GET <code>/api/messages</code></h3>
+		<p>Gets all messages</p>
+		<h4>Request parameters</h4>
+		<strong>This call does not require parameters</strong>
+		<h4>Response</h4>
+		<p>
+			<strong>Format:</strong> JSON
+		</p>
+		<p>
+			<strong>Body:</strong> Array of messages
+		</p>
+		<p>
+			<strong>Example</strong>
+
+<pre>
+[
+  { 
+    _id: 'dhsTfddfb98vcx4', 
+    content: 'Hello world', 
+    createdOn: '2001-09-12T04:07:58.024Z' 
+  },
+  { 
+    _id: 'rfsaffbU482wxp1', 
+    content: 'Foo bar', 
+    createdOn: '2001-09-12T04:08:14.846Z' 
+  }
+]
+</pre>
+
+		</p>
+
+		<hr>
+
+		<h3>GET <code>/api/message/&lt;id&gt;</code></h3>
+		<p>Gets one message</p>
+		<h4>Request parameters</h4>
+		<h5>Url parameters</h5>
+		<ul>
+			<li><strong>id</strong> - Id of the message</li>
+		</ul>
+		<h4>Response</h4>
+		<p>
+			<strong>Format:</strong> JSON
+		</p>
+		<p>
+			<strong>Body:</strong> Message object
+		</p>
+		<p>
+			<strong>Example</strong>
+
+<pre>
+{ 
+  _id: 'dhsTfddfb98vcx4', 
+  content: 'Hello world', 
+  createdOn: '2001-09-12T04:07:58.024Z' 
+}
+</pre>
+
+		</p>
+
+		<hr>
+
+		<h3>POST <code>/api/message</code></h3>
+		<p>Posts a message</p>
+		<h4>Request parameters</h4>
+		<h5>Request body</h5>
+		<ul>
+			<li><strong>content</strong> - Content of the message</li>
+		</ul>
+		<h4>Response</h4>
+		<p>
+			<strong>Format:</strong> JSON
+		</p>
+		<p>
+			<strong>Body:</strong> Message object posted with the added parameters from server
+		</p>
+		<p>
+			<strong>Example</strong>
+
+<pre>
+{ 
+  _id: 'dhsTfddfb98vcx4', 
+  content: 'Hello world', 
+  createdOn: '2001-09-12T04:07:58.024Z' 
+}
+</pre>
+
+		</p>
+
+		<hr>
+
+		<h3>DELETE <code>/api/message/&lt;id&gt;</code></h3>
+		<p>Deletes a message</p>
+		<h4>Request parameters</h4>
+		<h5>Url parameters</h5>
+		<ul>
+			<li><strong>id</strong> - Id of the message to delete</li>
+		</ul>
+		<h4>Response</h4>
+		<p>
+			<strong>Format:</strong> JSON
+		</p>
+		<p>
+			<strong>Body:</strong> Message object deleted
+		</p>
+		<p>
+			<strong>Example</strong>
+
+<pre>
+{ 
+  _id: 'dhsTfddfb98vcx4', 
+  content: 'Hello world', 
+  createdOn: '2001-09-12T04:07:58.024Z' 
+}
+</pre>
+
+		</p>
+
+	</div>
+</body>
+</html>
